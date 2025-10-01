@@ -1,0 +1,396 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>BayeTech | Smart Industrial IoT for a Sustainable Future</title>
+  <meta name="description" content="BayeTech provides Industrial IoT (IIoT) solutions for energy, manufacturing, agriculture, and mining. We deliver real-time monitoring, predictive maintenance, and smart automation to reduce costs, increase productivity, and improve sustainability." />
+  <meta name="keywords" content="BayeTech, Industrial IoT, IIoT solutions, AIoT, Smart Factory, Predictive Maintenance, Energy Monitoring, Agriculture IoT, Mining IoT, Automation, Industry 4.0" />
+  <meta name="author" content="BayeTech" />
+
+  <!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://bayetech.com/" />
+  <meta property="og:title" content="BayeTech | Smart Industrial IoT for a Sustainable Future" />
+  <meta property="og:description" content="Transform your industry with BayeTech's IoT solutions - from energy monitoring to smart factory automation." />
+  <meta property="og:image" content="https://datacakra.com/wp-content/uploads/2023/03/max-larochelle-c-vWdiICscA-unsplash-scaled.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://bayetech.com/" />
+  <meta name="twitter:title" content="BayeTech | Smart Industrial IoT for a Sustainable Future" />
+  <meta name="twitter:description" content="Transform your industry with BayeTech's IoT solutions - from energy monitoring to smart factory automation." />
+  <meta name="twitter:image" content="https://datacakra.com/wp-content/uploads/2023/03/max-larochelle-c-vWdiICscA-unsplash-scaled.jpg" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+
+  <!-- Styles & Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 w-full z-20 bg-white/50 backdrop-blur-md border-b border-white/80">
+        <div class="container mx-auto h-[8vh] flex items-center justify-between px-5 lg:px-0">
+            <div class="h-10 flex items-center gap-3">
+                <img src="assets/logo.png" class="h-full" alt="logo baye tech">
+                <h1 class="font-semibold">BayeTech</h1>
+            </div>
+            <nav class="hidden lg:block">
+                <ul class="flex items-center gap-6">
+                    <li>
+                        <a class="opacity-50 hover:opacity-100" href="#about-us">About Us</a>
+                    </li>
+                    <li>
+                        <a class="opacity-50 hover:opacity-100" href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a class="opacity-50 hover:opacity-100" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="opacity-50 hover:opacity-100" href="#reviews">Reviews</a>
+                    </li>
+                    <li>
+                        <a class="opacity-50 hover:opacity-100" href="#contact-us">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="mailto:contact@baye-group.com"
+                class="py-3 px-4 rounded-lg bg-blue-600 text-white my-6 cursor-pointer hover:bg-blue-700 flex items-center gap-3 hidden lg:block">
+                <i class="fa fa-fw fa-envelope text-xl"></i>
+                <span class="font-semibold">Email Us</span>
+            </a>
+            <div class="text-2xl opacity-50 hover:opacity-100 lg:hidden" id="toggle">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <div class="fixed left-0 w-full h-full bg-white z-10 border-t pt-[10vh] flex flex-col gap-8 items-center transition-all lg:hidden"
+        style="top: -100%" id="sidebar">
+        <nav>
+            <ul class="flex flex-col items-center gap-8">
+                <li>
+                    <a class="opacity-50 hover:opacity-100" onclick="closeSidebar()" href="#about-us">About Us</a>
+                </li>
+                <li>
+                    <a class="opacity-50 hover:opacity-100" onclick="closeSidebar()" href="#services">Services</a>
+                </li>
+                <li>
+                    <a class="opacity-50 hover:opacity-100" onclick="closeSidebar()" href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a class="opacity-50 hover:opacity-100" onclick="closeSidebar()" href="#reviews">Reviews</a>
+                </li>
+                <li>
+                    <a class="opacity-50 hover:opacity-100" onclick="closeSidebar()" href="#contact-us">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="mailto:contact@baye-group.com"
+            class="py-3 px-4 rounded-lg bg-blue-600 text-white cursor-pointer hover:bg-blue-700 flex items-center gap-3 w-fit">
+            <i class="fa fa-fw fa-envelope text-xl"></i>
+            <span class="font-semibold">Email Us</span>
+        </a>
+    </div>
+
+    <!-- Content -->
+    <main>
+
+        <!-- Jumbotron -->
+        <section>
+            <div class="container mx-auto bg-slate-100 h-[90vh] mt-[8vh] lg:rounded-xl overflow-hidden relative">
+                <img class="object-cover object-center h-full w-full"
+                    src="https://datacakra.com/wp-content/uploads/2023/03/max-larochelle-c-vWdiICscA-unsplash-scaled.jpg"
+                    alt="header background">
+                <div
+                    class="bg-black/50 px-5 lg:px-0 absolute top-0 left-0 w-full h-full flex items-center justify-center flex-col text-white">
+                    <h2 class="font-semibold text-4xl lg:text-6xl py-5 lg:w-[70%] text-center">Smart Industrial IoT for
+                        a Sustainable Future</h2>
+                    <p class="opacity-75 lg:w-[50%] text-center">BayeTech delivers AIoT solutions that connect data,
+                        machines, and people to drive efficiency, safety, and sustainability across the energy,
+                        manufacturing, agriculture, and mining sectors.</p>
+                    <a href="#contact-us"
+                        class="py-3 px-4 rounded-lg bg-blue-600 text-white my-6 cursor-pointer hover:bg-blue-700 flex items-center gap-3">
+                        <span>Contact Us</span>
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us -->
+        <section id="about-us">
+            <div class="container mx-auto">
+                <div class="w-fit py-2 px-4 rounded-full border mx-auto mt-16">
+                    <h2>About Us</h2>
+                </div>
+                <p class="my-6 text-xl lg:text-4xl text-center px-5">
+                    BayeTech is a provider of Industrial IoT (IIoT) solutions. We help industries transform through
+                    monitoring systems, predictive maintenance, and smart automation. With the technology we develop,
+                    companies can reduce operational costs, increase productivity, and minimize the risk of
+                    downtime.</span>
+                </p>
+                <div class="lg:flex justify-center gap-16">
+                    <div class="text-center p-4 w-96">
+                        <div class="text-7xl my-3">20+</div>
+                        <div class="w-[80%] mx-auto opacity-50">Has handled dozens of Internet of Things (IoT) projects
+                        </div>
+                    </div>
+                    <div class="text-center p-4 w-96">
+                        <div class="text-7xl my-3">10+</div>
+                        <div class="w-[80%] mx-auto opacity-50">Companies from various industries have become our
+                            clients</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section id="services">
+            <div class="container mx-auto py-16 px-5">
+                <div class="flex items-center gap-3">
+                    <div class="w-4 h-4 rounded-full bg-blue-100 flex items-center justify-center">
+                        <div class="w-2 h-2 rounded-full bg-blue-600"></div>
+                    </div>
+                    <h2 class="text-xl">Services</h2>
+                </div>
+                <h3 class="text-4xl font-semibold py-2">Sectors We Serve</h3>
+                <p class="opacity-50">BayeTech delivers tailored Industrial IoT solutions to optimize efficiency, ensure
+                    safety, and boost productivity across diverse industries.</p>
+                <div class="grid grid-cols-1 lg:grid-cols-4 mt-6 gap-3">
+                    <div class="bg-blue-50 rounded-xl p-5">
+                        <div
+                            class="w-14 h-14 rounded-full bg-blue-600 flex items-center justify-center text-white text-2xl">
+                            <i class="fa fa-bolt"></i>
+                        </div>
+                        <div class="mt-6">
+                            <h4 class="text-xl py-2">Energy</h4>
+                            <p class="text-sm opacity-50">IoT solutions for energy efficiency, real-time monitoring, and
+                                operational cost savings.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-50 rounded-xl p-5">
+                        <div
+                            class="w-14 h-14 rounded-full bg-blue-600 flex items-center justify-center text-white text-2xl">
+                            <i class="fa fa-industry"></i>
+                        </div>
+                        <div class="mt-6">
+                            <h4 class="text-xl py-2">Manufacture</h4>
+                            <p class="text-sm opacity-50">IoT enhances productivity, predictive maintenance, and
+                                manufacturing process automation.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-50 rounded-xl p-5">
+                        <div
+                            class="w-14 h-14 rounded-full bg-blue-600 flex items-center justify-center text-white text-2xl">
+                            <i class="fa fa-seedling"></i>
+                        </div>
+                        <div class="mt-6">
+                            <h4 class="text-xl py-2">Agriculture</h4>
+                            <p class="text-sm opacity-50">Smart sensor solutions for efficient irrigation, real-time
+                                crop monitoring, and optimized harvest yields.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-50 rounded-xl p-5">
+                        <div
+                            class="w-14 h-14 rounded-full bg-blue-600 flex items-center justify-center text-white text-2xl">
+                            <i class="fa fa-hard-hat"></i>
+                        </div>
+                        <div class="mt-6">
+                            <h4 class="text-xl py-2">Mining</h4>
+                            <p class="text-sm opacity-50">AIoT drives mining safety, maximizes heavy equipment
+                                efficiency, and optimizes production.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section id="portfolio">
+            <div class="container mx-auto px-5">
+                <div class="">
+                    <div class="flex items-center gap-3">
+                        <div class="w-4 h-4 rounded-full bg-blue-100 flex items-center justify-center">
+                            <div class="w-2 h-2 rounded-full bg-blue-600"></div>
+                        </div>
+                        <h2 class="text-xl">Portfolio</h2>
+                    </div>
+                    <h3 class="text-4xl font-semibold py-2">Projects & Implementations</h3>
+                    <p class="opacity-50">Here are some selected projects we have successfully completed</p>
+                </div>
+                <div class="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
+                    <div class="gap-6">
+                        <div class="aspect-video rounded-xl bg-blue-100 overflow-hidden">
+                            <img src="https://listrikindonesia.com/assets/berita/original/38101478733-plts_@phr.jpg"
+                                alt="Energy Monitoring System">
+                        </div>
+                        <div class="py-4">
+                            <h2 class="text-2xl font-semibold">Energy Monitoring System Development</h2>
+                            <p class="w-[80%] mt-3">BayeTech developed a real-time monitoring platform for a
+                                manufacturing plant, helping reduce energy consumption by up to 25%.</p>
+                            <div class="text-blue-600 mt-3">Jan 2023 - Aug 2023</div>
+                        </div>
+                    </div>
+
+                    <div class="gap-6">
+                        <div class="aspect-video rounded-xl bg-blue-100 overflow-hidden">
+                            <img src="https://media.istockphoto.com/id/905416730/id/foto/iot-robot-industri-pintar-4-0-konsep-pertanian-agronomi-industri-petani-menggunakan-tablet.jpg?s=612x612&w=0&k=20&c=mc9pFlyddWoUxoqwi3ofgalNa_NzTfhjJIsNgOQ0zt0="
+                                alt="Smart Agriculture IoT">
+                        </div>
+                        <div class="py-4">
+                            <h2 class="text-2xl font-semibold">IoT for Smart Agriculture</h2>
+                            <p class="w-[80%] mt-3">Smart sensor solutions for automated irrigation, saving up to 40% of
+                                water usage.</p>
+                            <div class="text-blue-600 mt-3">Mar 2023 - Jul 2023</div>
+                        </div>
+                    </div>
+
+                    <div class="gap-6">
+                        <div class="aspect-video rounded-xl bg-blue-100 overflow-hidden">
+                            <img src="https://www.anakteknik.co.id/property/19855/articles/1937/img-20210527-wa0007.jpg"
+                                alt="Predictive Maintenance Mining">
+                        </div>
+                        <div class="py-4">
+                            <h2 class="text-2xl font-semibold">Predictive Maintenance in Mining</h2>
+                            <p class="w-[80%] mt-3">AI-driven analytics system that predicts heavy machinery failures,
+                                significantly reducing downtime.</p>
+                            <div class="text-blue-600 mt-3">May 2024 - Sep 2024</div>
+                        </div>
+                    </div>
+
+                    <div class="gap-6">
+                        <div class="aspect-video rounded-xl bg-blue-100 overflow-hidden">
+                            <img src="https://acuvate.com/wp-content/uploads/2025/01/Embracing-Smart-Manufacturing_-How-AI-and-Automation-Will-Redefine-2025-and-Beyond-1.webp"
+                                alt="Smart Factory Automation">
+                        </div>
+                        <div class="py-4">
+                            <h2 class="text-2xl font-semibold">Smart Factory Automation</h2>
+                            <p class="w-[80%] mt-3">BayeTech integrated IoT systems with production automation, boosting
+                                manufacturing capacity by 30% while minimizing production errors.</p>
+                            <div class="text-blue-600 mt-3">Oct 2024 - Feb 2025</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Reviews -->
+        <section class="bg-blue-100 py-16 mt-6" id="reviews">
+            <div class="text-center">
+                <div class="w-fit py-2 px-4 rounded-full border mx-auto">
+                    <h2>Reviews</h2>
+                </div>
+                <p class="text-4xl font-semibold text-blue-600 my-6">What Our Clients Say</p>
+            </div>
+            <div class="flex flex-wrap justify-center mt-8 gap-6">
+
+                <figure class="p-5 rounded-lg bg-white w-80">
+                    <div class="flex gap-3 items-center">
+                        <div class="w-10 h-10 rounded-full bg-blue-100 overflow-hidden">
+                            <img class="w-full h-full"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC8kiSH5ZSAcVoj3tAQQDoP_ux0sSricMyUg&s"
+                                alt="">
+                        </div>
+                        <div class="">
+                            <figcaption class="font-semibold">Andhika Ramadhan</figcaption>
+                            <p class="opacity-50 text-xs">Operations Manager, PT Energi Nusantara</p>
+                        </div>
+                    </div>
+                    <p class="py-4 text-sm">BayeTech’s IoT solutions have successfully reduced our factory’s energy consumption significantly.</p>
+                </figure>
+
+                <figure class="p-5 rounded-lg bg-white w-80">
+                    <div class="flex gap-3 items-center">
+                        <div class="w-10 h-10 rounded-full bg-blue-100 overflow-hidden">
+                            <img class="w-full h-full" src="assets/clara.png" alt="">
+                        </div>
+                        <div class="">
+                            <figcaption class="font-semibold">Clara Wulandari</figcaption>
+                            <p class="opacity-50 text-xs">Head of Plantation, AgriPrima</p>
+                        </div>
+                    </div>
+                    <p class="py-4 text-sm">With BayeTech’s smart agriculture sensors, our land management has become significantly more efficient.</p>
+                </figure>
+
+                <figure class="p-5 rounded-lg bg-white w-80">
+                    <div class="flex gap-3 items-center">
+                        <div class="w-10 h-10 rounded-full bg-blue-100 overflow-hidden">
+                            <img class="w-full h-full" src="assets/budi.png" alt="">
+                        </div>
+                        <div class="">
+                            <figcaption class="font-semibold">Budi Santoso</figcaption>
+                            <p class="opacity-50 text-xs">Mining Supervisor, Barata Mining Group</p>
+                        </div>
+                    </div>
+                    <p class="py-4 text-sm">With BayeTech’s predictive maintenance, heavy equipment downtime in our mining operations has been drastically reduced..</p>
+                </figure>
+
+            </div>
+        </section>
+
+        <!-- Contact Us -->
+        <section class="bg-blue-600 py-16 px-5" id="contact-us">
+            <div class="container mx-auto text-center">
+                <div class="py-10">
+                    <h2 class="text-white text-4xl lg:text-6xl font-semibold">We Available For Next Project!</h2>
+                    <p class="text-white opacity-75 mt-3">We are ready to help you realize industrial digital transformation with the right IoT solutions..</p>
+                    <a href="mailto:contact@baye-group.com"
+                        class="inline-block py-3 px-4 bg-white rounded-xl text-blue-600 flex items-center gap-3 mt-3 shadow-lg cursor-pointer">
+                        <i class="fa fa-fw fa-envelope text-xl"></i>
+                        <span class="font-semibold">Email Us</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-14 flex flex-col items-center px-5">
+        <ul class="flex flex-wrap justify-center items-center gap-6">
+            <li>
+                <a class="opacity-50 hover:opacity-100" href="#about-us">About Us</a>
+            </li>
+            <li>
+                <a class="opacity-50 hover:opacity-100" href="#services">Services</a>
+            </li>
+            <li>
+                <a class="opacity-50 hover:opacity-100" href="#portfolio">Portfolio</a>
+            </li>
+            <li>
+                <a class="opacity-50 hover:opacity-100" href="#reviews">Reviews</a>
+            </li>
+            <li>
+                <a class="opacity-50 hover:opacity-100" href="#contact-us">Contact Us</a>
+            </li>
+        </ul>
+        <div class="flex items-center gap-6 py-6">
+            <a href="" class="opacity-50 hover:opacity-100 text-2xl">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="opacity-50 hover:opacity-100 text-2xl">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="" class="opacity-50 hover:opacity-100 text-2xl">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        <p class="opacity-50">&copy; 2025 BayeTech, Inc. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
